@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Articl from "./Articl/Articl";
-import Bandeau from "./Articl/Bandeau";
 import axios from "axios";
 import Categories from "../Header/HeaderComponent/Categories";
 
@@ -37,8 +36,7 @@ const HomePage = () => {
 
   console.log({ activeCategory });
   return (
-    <>
-      <Bandeau />
+    <div className="absolute top-[100vh] left-0 right-0 bg-gray-300">
       <Categories
         categories={
           postWithCategories ? Object.keys(postWithCategories.category) : []
@@ -51,7 +49,7 @@ const HomePage = () => {
         <div>Data is loading</div>
       ) : (
 
-        <div className="w-full mt-6 pl-[130px] pr-[130px] justify-items-center  grid grid-cols-3 gap-x-24">
+        <div className="w-full mt-6 pl-[130px] pr-[130px] justify-items-center  grid grid-cols-3 gap-x-24 ">
           {posts
             // .filter(
             //   (post) => !activeCategory || post?.category?.[activeCategory]
@@ -83,7 +81,7 @@ const HomePage = () => {
 
         </div>
       )}
-    </>
+    </div>
   );
 };
 

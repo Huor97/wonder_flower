@@ -3,7 +3,7 @@ import ItemsContainer from './Footer-components/ItemsContainer';
 
 const Footer = () => {
   return (
-    <footer className="bg-green-800 text-white">
+    <footer className="bg-green-800 text-white ">
       <ItemsContainer />
       <div className="md:flex md:justify-between md:items-center sm:px-12 px-2 bg-green-900 py-2">
         
