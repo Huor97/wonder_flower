@@ -9,7 +9,7 @@ const Navbar = ({ categories, setActiveCategory, activeCategory }) => {
     setNav(!nav);
   };
   return (
-    <div className="shadow-md pt-2 bg-pink-50 bg-opacity-20">
+    <div className="shadow-md pt-2 bg-pink-50 bg-opacity-20  ">
     <div className="flex items-center justify-center text-green-800 text-xl font-bold text-center">
       <ul className="flex flex-wrap items-center space-x-40 ">
         {categories.map((category) => (
