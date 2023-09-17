@@ -1,29 +1,29 @@
-import React from "react";
-import Accueil from "../../../img/fleurs_accueil.jpg";
-// import Nav from "../../Header/HeaderComponent/Nav";
-// import Banner from "../../Header/HeaderComponent/Banner";
+import React from 'react';
+import Button from '../../Button';
+import videoBackground from '../../../img/bandeau.mp4';
 
-const Bandeau = ({setActiveCategory}) => {
+const Bandeau = ({ setActiveCategory }) => {
   return (
     <>
       <div className="w-full z-[-1] fixed top-0 left-0 right-0">
-        <img
-          className="max-h-screen w-full object-cover object-bottom"
-          src={Accueil}
-          alt="fleurs poétiques dans le vent à la campagne"
-        />
-    
-        <div className="absolute w-full top-40 py-3 inset-x-0 text-center leading-4">
-          <h1 className="text-6xl body-font font-Yeseva m-5">Wonderflower</h1>
-          <p className="text-3xl m-5">Embellissons la vie des personnes qui nous entourent</p>
-          <button
-            id="button"
-            type="submit"
-            className="bg-pink-900 shadow hover:bg-pink-700 text-white font-bold rounded-full p-3 w-40"
-            onClick={(e) => setActiveCategory("")}
-          >
-            Notre collection
-          </button>
+        <video
+          autoPlay
+          loop
+          muted
+          className="max-h-screen w-full object-cover object-right"
+        >
+          <source src={videoBackground} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <div className="absolute w-full top-60 py-3 inset-x-0 text-center leading-4">
+          <h1 className="text-6xl body-font font-Yeseva m-5 uppercase  tracking-[.3em] ">
+            Wonderflower
+          </h1>
+          <p className="text-2xl m-5">
+            Embellissons la vie des personnes qui nous entourent
+          </p>
+          <Button text={'Notre collection'} />
         </div>
       </div>
     </>

@@ -1,0 +1,69 @@
+.randome_text {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  line-height: 2em;
+  color: transparent;
+}
+
+.randome_text:before {
+  content: 'Wonderflower';
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  text-indent: 0;
+  color: #fff;
+}
+.randome_text:hover {
+  animation: show 0.8s linear forwards;
+}
+@keyframes show {
+  93% {
+    color: transparent;
+  }
+  94% {
+    color: #fff;
+  }
+  100% {
+    color: #fff;
+  }
+}
+.randome_text:hover:before {
+  animation: texte 0.8s linear forwards;
+}
+@keyframes texte {
+  0% {
+    content: '4@,3SAscAi;9,bT4';
+  }
+
+  10% {
+    content: '$R6?4dSj{qS<7Yh7';
+  }
+  20% {
+    content: '+BDs73f;[u3^4Lgg';
+  }
+  30% {
+    content: '{qS<7Yh7+BDs73f;';
+  }
+  50% {
+    content: 'Ai;9,bT4$R6?4dSj';
+  }
+  60% {
+    content: '[o3^4LggAi;9,bT4';
+  }
+  70% {
+    content: 'qoj4BWy-?4dSj{qS';
+  }
+  80% {
+    content: 'GonQ5Tye4LggAi;s';
+  }
+  90% {
+    content: 'Go3d4<yecAi;9,bT';
+  }
+  100% {
+    content: '';
+  }
+}
